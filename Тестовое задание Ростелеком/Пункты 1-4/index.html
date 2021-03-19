@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<button onclick="showUsers(data)" class="btn-start">Вывести список пользователей</button>
+		<div class="search">
+			<input type="text" class='input' placeholder="Введите данные для поиска" onkeyup="searchName()">
+			<div class="radio-items">
+				<input type="radio" name="search" value='name' id="radio" checked>name
+				<input type="radio" name="search" value='email' id="radio">email
+				<input type="radio" name="search" value='phone' id="radio">phone
+			</div>
+		</div>
+		
+		<div class="sort">
+			<div class="sort-items">			
+				<input type="radio" name="sort" value='name' id="radio" checked>name
+				<input type="radio" name="sort" value='email' id="radio">email
+				<input type="radio" name="sort" value='phone' id="radio">phone
+			</div>
+			<button onclick="sortName(data)">Сортировать</button>
+		</div>
+		<div class="frame"></div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
